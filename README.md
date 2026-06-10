@@ -6,9 +6,7 @@ Aplicación Android nativa desarrollada en Kotlin que se conecta de forma asínc
 
 ## 📸 Capturas de Pantalla
 
-> [!NOTE]
-> Coloque aquí las capturas de pantalla de la aplicación en ejecución.
-> E.g., `![MainActivity](screenshots/main_activity.png)`
+![MainActivity](main_activity.png)
 
 ---
 
