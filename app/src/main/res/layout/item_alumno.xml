@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="16dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="Fotografía del alumno"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_avatar_placeholder" />
+
+    <TextView
+        android:id="@+id/txtNombres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgFoto"
+        app:layout_constraintTop_toTopOf="@id/imgFoto"
+        tools:text="ADRIAN JOEL GUIZADO VERDEZOTO" />
+
+    <ImageView
+        android:id="@+id/imgEmailIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_email"
+        app:layout_constraintStart_toStartOf="@id/txtNombres"
+        app:layout_constraintTop_toBottomOf="@id/txtNombres" />
+
+    <TextView
+        android:id="@+id/txtCorreo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#555555"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/imgEmailIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgEmailIcon"
+        app:layout_constraintTop_toTopOf="@id/imgEmailIcon"
+        tools:text="aguizadov@uteq.edu.ec" />
+
+    <ImageView
+        android:id="@+id/imgPhoneIcon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_phone"
+        app:layout_constraintStart_toStartOf="@id/txtNombres"
+        app:layout_constraintTop_toBottomOf="@id/imgEmailIcon" />
+
+    <TextView
+        android:id="@+id/txtTelefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="#555555"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/imgPhoneIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgPhoneIcon"
+        app:layout_constraintTop_toTopOf="@id/imgPhoneIcon"
+        tools:text="0996137839" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
